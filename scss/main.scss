@@ -149,16 +149,8 @@ body {
     cursor: pointer;
     transition-duration: 0.5s;
 
-    &:hover {
-      transform: scale(1.2);
-    }
-
     @media screen and (max-width: $tableWidth) {
       display: none;
-    }
-
-    &-link {
-      color: inherit;
     }
   }
 
@@ -335,7 +327,6 @@ body {
 
       &:before {
         content: "";
-        background-image: url(../img/arrow-r.png);
         width: 20px;
         height: 10px;
         display: block;
@@ -344,6 +335,7 @@ body {
         transform: translateY(-50%);
         right: -42px;
         animation: to 3s ease-in-out infinite;
+        background-image: url(../img/arrow-r.png);
       }
     }
   }

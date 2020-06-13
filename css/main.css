@@ -641,7 +641,6 @@ body {
 
 .home__info-seeall:before {
   content: "";
-  background-image: url(../img/arrow-r.png);
   width: 20px;
   height: 10px;
   display: block;
@@ -652,6 +651,7 @@ body {
   right: -42px;
   -webkit-animation: to 3s ease-in-out infinite;
           animation: to 3s ease-in-out infinite;
+  background-image: url(../img/arrow-r.png);
 }
 
 .block-title {
