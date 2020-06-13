@@ -412,12 +412,24 @@ body {
   text-align: center;
   font-size: 1.66667rem;
   color: inherit;
+  cursor: pointer;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.header__logo:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 @media screen and (max-width: 768px) {
   .header__logo {
     display: none;
   }
+}
+
+.header__logo-link {
+  color: inherit;
 }
 
 .header__log {
@@ -629,7 +641,7 @@ body {
 
 .home__info-seeall:before {
   content: "";
-  background-image: url(/img/arrow-r.png);
+  background-image: url(../img/arrow-r.png);
   width: 20px;
   height: 10px;
   display: block;
@@ -939,8 +951,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid #e1e1e1;
-  border-left: 1px solid #e1e1e1;
+  border: 1px solid #e1e1e1;
+  border-top: none;
 }
 
 @media screen and (max-width: 600px) {
@@ -1482,10 +1494,6 @@ body {
 
 .footer__center-form-input:focus {
   border-color: #6e774a;
-}
-
-.footer__center-form-input:invalid {
-  border: 2px solid red;
 }
 
 .footer__center-form-input::-webkit-input-placeholder {

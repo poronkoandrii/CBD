@@ -146,9 +146,19 @@ body {
     text-align: center;
     font-size: rem(30);
     color: inherit;
+    cursor: pointer;
+    transition-duration: 0.5s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
 
     @media screen and (max-width: $tableWidth) {
       display: none;
+    }
+
+    &-link {
+      color: inherit;
     }
   }
 
@@ -548,8 +558,8 @@ body {
         justify-content: space-between;
         background-color: #f1f1f1;
         align-items: center;
-        border-bottom: 1px solid #e1e1e1;
-        border-left: 1px solid #e1e1e1;
+        border: 1px solid #e1e1e1;
+        border-top: none;
 
         @media screen and (max-width: 600px) {
           flex-direction: column;
@@ -975,10 +985,6 @@ body {
 
         &:focus {
           border-color: $default-color;
-        }
-
-        &:invalid {
-          border: 2px solid red;
         }
 
         &::placeholder {
